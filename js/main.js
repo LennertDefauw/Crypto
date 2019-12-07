@@ -13,7 +13,7 @@ var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'S
 var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 const head = {
-    "authorization": "Apikey d9d0af764b05459eb99aaa7426a1864f815539effd6ef238787b79839249b4fe"
+    "authorization": "Your API Key"
 }
 
 
