@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Dashboard</title>
+
+        <!-- Link for favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="msapplication-TileColor" content="#2B2E3F">
+        <meta name="theme-color" content="#2B2E3F">
+
+        <!-- Link to stylesheets -->
+        <link href="./css/screen.css" rel="stylesheet">
+
+        <!-- Link to scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/chart.js"></script>
+        <script src="js/counter.js"></script>
+
+        <!-- Link to google fonts Oxygen font style -->
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:400,700&display=swap" rel="stylesheet">
+
+        <!-- Link for Chart.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.min.js"></script>
+
+
+</head>
+
+<body>
+        <div class="c-app">
+                <div class="c-app__item u-span-column-4">
+                        <div class="c-info c-info__select">
+                                <span class="c-custom-select">
+                                        <select class="c-custom-select__input c-input__select js-select" name="selectCrypto"
+                                                id="selectCrypto">
+                                                <option value="BTC">BTC/EUR</option>
+                                                <option value="XRP">XRP/EUR</option>
+                                                <option value="ETC">ETC/EUR</option>
+                                                <option value="ETH">ETH/EUR</option>
+                                                <option value="BAT">BAT/EUR</option>
+                                        </select>
+                                        <svg class="c-custom-select__symbol" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 24 24">
+                                                <path d="M7,10l5,5,5-5Z" />
+                                        </svg>
+                                </span>
+                        </div>
+                </div>
+
+                <div class="c-app__item u-span-column-4">
+                        <div class="c-info c-info__logo">
+                                <img width="60px" height="60px" class="js-logo">
+                        </div>
+
+                </div>
+
+                <div class="c-app__item u-span-column-4">
+                        <div class="c-info c-info__price">
+                                <sup class="u-euro-token">€</sup><span class="js-price"></span>
+                                <hr class="u-border-line">
+                        </div>
+                </div>
+
+                <div class="c-app__item u-span-column-4">
+                        <div class="c-info c-info__percentage js-percentage">
+                        </div>
+                </div>
+
+                <div class="c-app__item u-span-column-4">
+                        <div class="c-info c-info__graph">
+                                <canvas id="myChart" width="400" height="250"></canvas>
+                        </div>
+                </div>
+
+                <div class="c-app__item">
+                        <div class="c-info c-info__button-day js-button" data-value="7">
+                                <button class="c-link-cta is-selected">Week</button>
+                        </div>
+                </div>
+
+                <div class="c-app__item">
+                        <div class="c-info c-info__button-week js-button" data-value="30">
+                                <button class="c-link-cta">Month</button>
+                        </div>
+                </div>
+
+                <div class="c-app__item">
+                        <div class="c-info c-info__button-month js-button" data-value="186">
+                                <button class="c-link-cta">½ Year</button>
+                        </div>
+                </div>
+
+                <div class="c-app__item">
+                        <div class="c-info c-info__button-year js-button" data-value="365">
+                                <button onclick="false" class="c-link-cta">Year</button>
+                        </div>
+                </div>
+
+                <div class="c-app__item u-span-column-2">
+                        <div class="c-info c-info__label-volume">
+                                24h Volume
+                        </div>
+                </div>
+
+                <div class="c-app__item u-span-column-2">
+                        <div class="c-info c-info__volume js-volume">
+
+                        </div>
+                </div>
+
+                <div class="c-app__item u-span-column-4">
+                        <div class="c-info c-info__label-hours">past 24 hours</div>
+                </div>
+
+                <div class="c-app__item u-span-column-2">
+                        <div class="c-info c-info__low js-low">
+                                <div class="u-low">LOW</div>
+                        </div>
+                </div>
+                <div class="c-app__item u-span-column-2">
+                        <div class="c-info c-info__high js-high">
+                                <div class="u-high">HIGH</div>
+                        </div>
+                </div>
+
+                <div class="c-app__item u-span-column-2">
+                        <div class="c-info c-info__updated">Last updated</div>
+                </div>
+
+                <div class="c-app__item u-span-column-2">
+                        <div class="c-info c-info__date js-updated"></div>
+                </div>
+
+        </div>
+</body>
+
+</html>
